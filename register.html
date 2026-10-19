@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مسير | إنشاء حساب</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="auth.js" defer></script>
+</head>
+<body>
+
+  <main class="auth-container">
+    <section class="auth-card">
+
+      <a href="login.html" class="brand">
+        <img src="logo.png" alt="شعار مسير" class="logo">
+      </a>
+
+      <h1>إنشاء حساب</h1>
+      <p class="welcome">انضم إلى مسير</p>
+      <p class="description">
+        وكن جزءًا من اكتشاف الحرف السعودية التقليدية
+      </p>
+
+      <form id="registerForm">
+
+        <label for="fullName">الاسم الكامل</label>
+        <input
+          type="text"
+          id="fullName"
+          placeholder="أدخل اسمك الكامل"
+          autocomplete="name"
+          required
+        >
+
+        <label for="registerEmail">البريد الإلكتروني</label>
+        <input
+          type="email"
+          id="registerEmail"
+          placeholder="أدخل بريدك الإلكتروني"
+          autocomplete="email"
+          required
+        >
+
+        <label for="registerPassword">كلمة المرور</label>
+        <div class="password-field">
+          <input
+            type="password"
+            id="registerPassword"
+            placeholder="أنشئ كلمة مرور قوية"
+            autocomplete="new-password"
+            minlength="8"
+            required
+          >
+          <button type="button"
+                  class="toggle-password"
+                  data-target="registerPassword"
+                  aria-label="إظهار كلمة المرور">
+            إظهار
+          </button>
+        </div>
+
+        <label for="confirmPassword">تأكيد كلمة المرور</label>
+        <div class="password-field">
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="أعد إدخال كلمة المرور"
+            autocomplete="new-password"
+            required
+          >
+          <button type="button"
+                  class="toggle-password"
+                  data-target="confirmPassword"
+                  aria-label="إظهار كلمة المرور">
+            إظهار
+          </button>
+        </div>
+
+        <p id="message" class="message"
+           role="status" aria-live="polite"></p>
+
+        <button type="submit" class="main-btn">
+          إنشاء الحساب
+        </button>
+
+      </form>
+
+      <p class="switch-page">
+        لديك حساب بالفعل؟
+        <a href="login.html">تسجيل الدخول</a>
+      </p>
+
+    </section>
+  </main>
+
+</body>
+</html>
