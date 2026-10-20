@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>إدارة الاختبار | مسير</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin-quiz.css">
+</head>
+
+<body>
+
+  <main class="admin-container">
+
+    <section class="admin-card">
+
+      <!-- Page Header -->
+      <div class="admin-header">
+
+        <img src="logo.png"
+             alt="شعار مسير"
+             class="admin-logo">
+
+        <h1>إدارة اختبار اكتشف حرفتك</h1>
+
+       
+
+      </div>
+
+      <!-- Questions List -->
+      <div class="admin-section">
+
+        <div class="section-header">
+          <h2>الأسئلة الحالية</h2>
+
+          <button type="button"
+                  id="add-question-btn"
+                  class="admin-btn">
+            + إضافة سؤال
+          </button>
+        </div>
+
+        <div id="questions-list">
+          <!-- Questions will appear here -->
+        </div>
+
+      </div>
+
+      <!-- Add / Edit Question Form -->
+      <div class="admin-section"
+           id="question-form-section"
+           hidden>
+
+        <h2 id="form-title">إضافة سؤال جديد</h2>
+
+        <form id="question-form">
+
+          <label for="question-input">
+            نص السؤال
+          </label>
+
+          <textarea id="question-input"
+                    rows="3"
+                    required></textarea>
+
+          <h3>خيارات الإجابة</h3>
+
+<label for="option1">الخيار الأول</label>
+<input type="text" id="option1" required>
+
+<label for="tag1">تصنيف الخيار الأول</label>
+<select id="tag1" required></select>
+
+<label for="option2">الخيار الثاني</label>
+<input type="text" id="option2" required>
+
+<label for="tag2">تصنيف الخيار الثاني</label>
+<select id="tag2" required></select>
+
+<label for="option3">الخيار الثالث</label>
+<input type="text" id="option3" required>
+
+<label for="tag3">تصنيف الخيار الثالث</label>
+<select id="tag3" required></select>
+
+<label for="option4">الخيار الرابع</label>
+<input type="text" id="option4" required>
+
+<label for="tag4">تصنيف الخيار الرابع</label>
+<select id="tag4" required></select>
+
+          <div class="form-buttons">
+
+            <button type="submit"
+                    class="admin-btn">
+              حفظ السؤال
+            </button>
+
+            <button type="button"
+                    id="cancel-btn"
+                    class="cancel-btn">
+              إلغاء
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="admin-quiz.js"></script>
+
+</body>
+</html>

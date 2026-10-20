@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>مسير | اكتشف حرفتك</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body class="site" data-bage="discover">
+  <header id="hdr" class="hdr"></header>
+  <main class="quiz-container">
+    <section class="quiz-card" id="welcome-screen">
+
+      <img src="logo.png" alt="شعار مسير" class="quiz-logo">
+
+      <h1>اكتشف حرفتك</h1>
+
+      <p class="quiz-subtitle">
+        لكل حرفة حكاية، ولكل شخص ميول تميّزه
+      </p>
+
+      <p class="quiz-description">
+  أجب عن <span id="quiz-count-text"></span>،
+  واكتشف الحرفة التراثية السعودية
+  الأقرب إلى اهتماماتك وتفضيلاتك.
+</p>
+
+      <div class="quiz-info">
+
+  <div class="info-item">
+    <span class="info-icon">✦</span>
+    <span id="quiz-count-info"></span>
+  </div>
+
+  <div class="info-item">
+    <span class="info-icon">◷</span>
+    <span>دقيقتان تقريبًا</span>
+  </div>
+
+</div>
+
+      <button type="button" class="start-btn" id="start-btn">
+        ابدأ رحلتك
+      </button>
+
+    </section>
+	
+	<section class="quiz-card" id="question-screen" hidden>
+
+  <p id="question-number">السؤال 1 من 5</p>
+  <div class="progress-bar">
+   <div class="progress-fill" id="progress-fill"></div>
+   </div>
+  <h2 id="question-text"></h2>
+
+  <div id="answer-options"></div>
+
+  <div class="quiz-navigation">
+    <button type="button" id="prev-btn">السابق</button>
+    <button type="button" id="next-btn">التالي</button>
+  </div>
+
+</section>
+
+<section class="quiz-card" id="result-screen" hidden>
+
+  <h2 class="result-title">اكتشفنا حرفتك!</h2>
+
+  <p class="result-description">
+    بناءً على إجاباتك، هذه الحرفة التراثية
+    الأقرب إلى اهتماماتك وتفضيلاتك
+  </p>
+
+  <div id="result-crafts"></div>
+
+  <button type="button"
+          id="restart-btn"
+          class="start-btn">
+    إعادة الاختبار
+  </button>
+
+</section>
+  </main>
+  <footer id="ftr" class="ft"></footer>
+<script src="data.js"></script>
+<script src="site.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>

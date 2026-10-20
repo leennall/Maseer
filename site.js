@@ -8,7 +8,7 @@ const navigation = [
   ["index.html", "الرئيسية", "home"],
   ["index.html#map", "الخريطة التفاعلية", "map"],
   ["crafts.html", "الحرف التقليدية", "crafts"],
-  ["discover.html", "اكتشف حرفتك", "discover"],
+  ["quiz.html", "اكتشف حرفتك", "discover"],
   ["about.html", "عن مسير", "about"],
 ];
 
