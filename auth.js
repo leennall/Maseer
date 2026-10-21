@@ -31,15 +31,21 @@ if (registerForm) {
   registerForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const name = document.getElementById("fullName").value.trim();
+    const firstName = document.getElementById("firstName").value.trim();
+const lastName = document.getElementById("lastName").value.trim();
     const email = document.getElementById("registerEmail").value.trim();
     const password = document.getElementById("registerPassword").value;
     const confirm = document.getElementById("confirmPassword").value;
 
-    if (!name || !email || !password || !confirm) {
-      showMessage("يرجى تعبئة جميع الحقول.", "error");
-      return;
-    }
+    if (!firstName || !lastName || !email || !password || !confirm) {
+  showMessage("يرجى تعبئة جميع الحقول.", "error");
+  return;
+}
+
+if (firstName.length < 2 || lastName.length < 2) {
+  showMessage("يجب أن يحتوي الاسم الأول واسم العائلة على حرفين على الأقل.", "error");
+  return;
+}
 
     if (password.length < 8) {
       showMessage(
