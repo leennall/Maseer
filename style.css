@@ -329,3 +329,15 @@ h1, h2, h3, .welcome, .main-btn, .btn, .craft-card h3, .card-link,
 }
 .site-back{display:block;text-align:center;margin-top:14px;color:var(--brown);font-weight:700;text-decoration:none}
 .site-back:hover{text-decoration:underline}
+.hdr .btn.login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 10px 16px;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}

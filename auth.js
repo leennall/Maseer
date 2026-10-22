@@ -47,6 +47,12 @@ if (firstName.length < 2 || lastName.length < 2) {
   return;
 }
 
+const namePattern = /^[\p{L}]+(?:[ '\u2019-][\p{L}]+)*$/u;
+
+if (!namePattern.test(firstName) || !namePattern.test(lastName)) {
+  showMessage("يرجى إدخال اسم صحيح باستخدام الحروف فقط.", "error");
+  return;
+}
     if (password.length < 8) {
       showMessage(
         "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل.",
@@ -68,6 +74,8 @@ if (firstName.length < 2 || lastName.length < 2) {
 }
 
 // تسجيل الدخول
+
+ // تسجيل الدخول - Frontend Demo
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
@@ -82,9 +90,16 @@ if (loginForm) {
       return;
     }
 
-    showMessage(
-      "تم التحقق من الحقول. سيتم تفعيل تسجيل الدخول بعد ربط Firebase.",
-      "success"
-    );
+    // No real authentication until Firebase is connected
+  sessionStorage.setItem("maseerDemoUser", "true");
+window.location.href = "index.html";
   });
 }
+
+
+// User Logout - Frontend Demo
+function logoutUser() {
+  sessionStorage.removeItem("maseerDemoUser");
+  window.location.href = "index.html";
+}
+
