@@ -240,3 +240,20 @@ input[type="email"] {
     font-size: 28px;
   }
 }
+.site-back {
+  display: block;
+  width: fit-content;
+  margin: 18px auto 0;
+  padding: 10px 22px;
+  border: 2px solid #4d3321;
+  border-radius: 10px;
+  color: #4d3321;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.site-back:hover {
+  background-color: #4d3321;
+  color: white;
+}

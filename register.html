@@ -25,14 +25,23 @@
 
       <form id="registerForm">
 
-        <label for="fullName">الاسم الكامل</label>
-        <input
-          type="text"
-          id="fullName"
-          placeholder="أدخل اسمك الكامل"
-          autocomplete="name"
-          required
-        >
+        <label for="firstName">الاسم الأول</label>
+<input
+  type="text"
+  id="firstName"
+  placeholder="أدخل الاسم الأول"
+  autocomplete="given-name"
+  required
+>
+
+<label for="lastName">اسم العائلة</label>
+<input
+  type="text"
+  id="lastName"
+  placeholder="أدخل اسم العائلة"
+  autocomplete="family-name"
+  required
+>
 
         <label for="registerEmail">البريد الإلكتروني</label>
         <input
@@ -91,7 +100,9 @@
         لديك حساب بالفعل؟
         <a href="login.html">تسجيل الدخول</a>
       </p>
-
+<a class="site-back" href="index.html">
+  العودة إلى الرئيسية
+</a>
     </section>
   </main>
 
