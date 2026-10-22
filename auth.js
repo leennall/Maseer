@@ -90,9 +90,16 @@ if (loginForm) {
       return;
     }
 
-    // No real authentication until Firebase is connected
+// Frontend Demo - distinguish admin from regular user
+const adminEmail = "admin@maseer.com";
+
+if (email === adminEmail) {
+  sessionStorage.setItem("maseerDemoAdmin", "true");
+  window.location.href = "admin-quiz.html";
+} else {
   sessionStorage.setItem("maseerDemoUser", "true");
-window.location.href = "index.html";
+  window.location.href = "index.html";
+}
   });
 }
 

@@ -13,7 +13,7 @@
   <main class="auth-container">
     <section class="auth-card">
 
-      <a href="index.html" class="brand" aria-label="الصفحة الرئيسية">
+      <a href="login.html" class="brand">
         <img src="logo.png" alt="شعار مسير" class="logo">
       </a>
 
@@ -22,26 +22,17 @@
       <p class="description">
         وكن جزءًا من اكتشاف الحرف السعودية التقليدية
       </p>
-<form id="registerForm">
-      <label for="firstName">الاسم الأول</label>
-<input
-  type="text"
-  id="firstName"
-  placeholder="أدخل اسمك الأول"
-  autocomplete="given-name"
-  minlength="2"
-  required
->
 
-<label for="lastName">اسم العائلة</label>
-<input
-  type="text"
-  id="lastName"
-  placeholder="أدخل اسم العائلة"
-  autocomplete="family-name"
-  minlength="2"
-  required
->
+      <form id="registerForm">
+
+        <label for="fullName">الاسم الكامل</label>
+        <input
+          type="text"
+          id="fullName"
+          placeholder="أدخل اسمك الكامل"
+          autocomplete="name"
+          required
+        >
 
         <label for="registerEmail">البريد الإلكتروني</label>
         <input
@@ -100,8 +91,6 @@
         لديك حساب بالفعل؟
         <a href="login.html">تسجيل الدخول</a>
       </p>
-
-      <a class="site-back" href="index.html">العودة إلى الرئيسية</a>
 
     </section>
   </main>

@@ -8,7 +8,7 @@ const navigation = [
   ["index.html", "الرئيسية", "home"],
   ["index.html#map", "الخريطة التفاعلية", "map"],
   ["crafts.html", "الحرف التقليدية", "crafts"],
-  ["discover.html", "اكتشف حرفتك", "discover"],
+  ["quiz.html", "اكتشف حرفتك", "discover"],
   ["about.html", "عن مسير", "about"],
 ];
 
@@ -23,11 +23,7 @@ $("#hdr").innerHTML = `
   <div class="hdr-in">
     <a href="index.html" class="lg"><img src="logo.png" alt="مسير"></a>
     <nav>${navigationLinks}</nav>
-  
-${sessionStorage.getItem("maseerDemoUser") === "true"
-  ? `<button type="button" class="btn login" id="userLogoutBtn">تسجيل الخروج</button>`
-  : `<a class="btn login" href="login.html">تسجيل الدخول</a>`
-}
+    <a class="btn login" href="login.html">تسجيل الدخول</a>
   </div>`;
 
 $("#ftr").innerHTML = `
@@ -201,13 +197,4 @@ if (page === "home") {
   addEventListener("scroll", updateActiveLink, { passive: true });
   addEventListener("hashchange", updateActiveLink);
   updateActiveLink();
- 
-}
-const userLogoutBtn = document.getElementById("userLogoutBtn");
-
-if (userLogoutBtn) {
-  userLogoutBtn.addEventListener("click", function () {
-    sessionStorage.removeItem("maseerDemoUser");
-    window.location.href = "index.html";
-  });
 }

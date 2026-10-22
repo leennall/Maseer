@@ -1,3 +1,11 @@
+
+// Protect admin page - Frontend Demo
+const isAdmin = sessionStorage.getItem("maseerDemoAdmin");
+
+if (!isAdmin) {
+  window.location.href = "login.html";
+}
+
 // Admin Logout - Frontend Demo
 
 function logoutAdmin() {

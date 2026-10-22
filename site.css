@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'The Year of Handicrafts';
+  src: url('TheYearofHandicrafts-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
 body.site{font-family:'Cairo',sans-serif;color:#3b2a1d;background:linear-gradient(180deg,rgba(245,237,223,.78),rgba(245,237,223,.93)),url(heritage-bg.png) center/cover fixed;line-height:1.9}
-.site h1,.site h2,.site h3,.site .num,.site .badge{font-family:'عام الحرف اليدوية','Cairo',sans-serif;font-weight:400}
-.site a{color:inherit;text-decoration:none}
+.site h1,
+.site h2,
+.site h3 {
+  font-family: 'The Year of Handicrafts', 'Cairo', sans-serif;
+  font-weight: 600;
+}.site a{color:inherit;text-decoration:none}
 :root{--terra:#4d3321;--olive:#5b6e43;--beige:#f5eddf;--card:rgba(255,250,243,.94)}
 .hdr{position:sticky;top:0;z-index:50;background:rgba(245,237,223,.92);backdrop-filter:blur(8px);border-bottom:1px solid #d8c8b4}
 .hdr-in{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:center;gap:22px;padding:6px 18px;flex-wrap:wrap}
@@ -40,7 +50,10 @@ h2.t{font-size:32px;text-align:center;margin:40px 0 8px}
 .dual h3{font-size:22px;margin:8px 0}.dual p{margin:0}
 .nextj{text-align:center;margin:40px 0}.nextj .btn{margin:6px}
 footer.ft{background:#4d3321;color:#f5eddf;text-align:center;padding:28px 18px;margin-top:50px}
-footer.ft nav{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}footer.ft p{margin:0;font-family:'عام الحرف اليدوية','Cairo'}
+footer.ft nav{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-bottom:10px}footer.ft p{
+  margin:0;
+  font-family:'Cairo',sans-serif;
+}
 @media(max-width:700px){.two,.dual{grid-template-columns:1fr}.pin{width:26px}.pop{width:210px}}
 /* v2 */
 .hdr-in{justify-content:space-between;gap:16px}.hdr .lg img{height:44px}.hdr nav{flex:1;justify-content:center}
