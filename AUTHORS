@@ -1,0 +1,40 @@
+Maseer | مسير
+IT320 – Practical Software Engineering
+King Saud University | Group 4
+Phase 3 – Sprint 1
+
+TEAM MEMBERS AND ASSIGNED CONTRIBUTIONS
+
+1. Rana Al Taleb — 445202203
+   Part 1: Section 4.2 Class Diagram and Section 4.4 Components Design
+   - Develop the overall class diagram.
+   - Prepare pseudocode for the three main functions: interactive map,
+     craft discovery quiz, and question management.
+   - Prepare component design diagrams and descriptions.
+
+2. Leena Altamimi — 445201396
+   Part 2: Section 4.1 System Architecture + Frontend
+   - Select and justify the architectural pattern.
+   - Create and explain the architecture diagram and system components.
+   - Implement the login and registration frontend interfaces.
+   - Work on demonstration login/logout behavior for users and admins.
+
+3. Hanan Alghamdi — 445201414
+   Part 3: Section 4.3 Data Design
+   - Prepare the ER diagram.
+   - Design the proposed NoSQL collections and documents.
+   - Describe relationships using embedding and/or referencing.
+
+4. Layan Altaweel — 445200328
+   Part 4: Section 4.5 Interface Design – Part 1
+   - Prepare the site map or user flow.
+   - Implement the interactive map interface.
+   - Implement craft search and craft detail views.
+
+5. Rahaf Almaarik — 445202157
+   Part 5: Section 4.5 Interface Design – Part 2
+   - Implement the craft discovery quiz interface.
+   - Implement the recommendations/results page.
+   - Implement administrator interfaces to add, edit, and delete questions.
+
+Note: These entries describe the team's assigned responsibilities for Sprint 1.

@@ -21,11 +21,27 @@ const navigationLinks = navigation
 
 $("#hdr").innerHTML = `
   <div class="hdr-in">
-    <a href="index.html" class="lg"><img src="logo.png" alt="مسير"></a>
-    <nav>${navigationLinks}</nav>
-    <a class="btn login" href="login.html">تسجيل الدخول</a>
-  </div>`;
+    <a href="index.html" class="lg">
+      <img src="logo.png" alt="مسير">
+    </a>
 
+    <nav>${navigationLinks}</nav>
+
+    ${
+      sessionStorage.getItem("maseerDemoUser") === "true"
+        ? `<button type="button" class="btn login" id="userLogoutBtn">
+             تسجيل الخروج
+           </button>`
+        : `<a class="btn login" href="login.html">
+             تسجيل الدخول
+           </a>`
+    }
+  </div>`;
+  document.getElementById("userLogoutBtn")
+  ?.addEventListener("click", function () {
+    sessionStorage.removeItem("maseerDemoUser");
+    window.location.href = "index.html";
+  });
 $("#ftr").innerHTML = `
   <div class="ft-in">
     <nav>${navigationLinks}</nav>

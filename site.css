@@ -106,3 +106,8 @@ footer.ft p{text-align:center}
 .free.two{margin-top:110px}
 
 @media(max-width:700px){footer.ft p{text-align:center}}
+#userLogoutBtn {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}

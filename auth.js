@@ -67,8 +67,8 @@ if (!namePattern.test(firstName) || !namePattern.test(lastName)) {
     }
 
     showMessage(
-      "تم التحقق من البيانات. سيتم تفعيل إنشاء الحساب بعد ربط Firebase.",
-      "success"
+       "تم التحقق من البيانات بنجاح. إنشاء الحساب تجريبي حاليًا.",
+  "success"
     );
   });
 }
@@ -93,7 +93,7 @@ if (loginForm) {
 // Frontend Demo - distinguish admin from regular user
 const adminEmail = "admin@maseer.com";
 
-if (email === adminEmail) {
+if (email.toLowerCase() === adminEmail)  {
   sessionStorage.setItem("maseerDemoAdmin", "true");
   window.location.href = "admin-quiz.html";
 } else {
